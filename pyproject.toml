@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "playground_3_10"
+version = "0.1.0"
+description = "A playground of python 3.10 features, as based on PEP 636"
+authors = ["Faris Chebib <faris@theluckybead.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipython = "^7.21.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

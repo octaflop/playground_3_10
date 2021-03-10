@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sandbox_app:
+    build: .
+    volumes:
+      - type: 'bind'
+        source: '.'
+        target: '/sandbox'
