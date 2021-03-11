@@ -1,14 +1,9 @@
-def main():
+def main(content, custom_match="zork"):
     # command = input("Go ahead and start typing for a match...")
-    command = """
-    open door
-    close
-    close blinds
-
-    tear straw back
-    🤠
-    """
+    # command = "hello world"
+    command = "go south"
+    command = content
+    print(command)
     match command.split():
-        case [action, obj]:
-            import ipdb; ipdb.set_trace()
-            print(f"{action}.{obj}")
+        case["go", ("north" | "south" | "east" | "west") as direction]:
+            return direction
